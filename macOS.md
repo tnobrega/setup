@@ -64,7 +64,7 @@ brew update
 If you get a `/usr/local must be writable` error, just run this:
 
 ```bash
-sudo chown -R $USER:admin /usr/local
+sudo chown -R $(whoami) $(brew --prefix)/*
 brew update
 ```
 
